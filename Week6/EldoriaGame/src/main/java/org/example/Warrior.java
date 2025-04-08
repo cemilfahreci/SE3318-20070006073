@@ -10,6 +10,7 @@ public class Warrior extends Hero implements Questable {
         System.out.println(getName() + " attacks with a sword!");
     }
 
+
     @Override
     public void acceptQuest(String questName) {
         System.out.println(getName() + " the Warrior accepts the quest: " + questName);

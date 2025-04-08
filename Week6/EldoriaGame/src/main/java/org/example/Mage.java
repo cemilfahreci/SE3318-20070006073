@@ -4,6 +4,7 @@ public class Mage extends Hero implements Questable {
 
     public Mage(String name, int level) {
         super(name, level);
+
     }
 
     public void castSpell() {
