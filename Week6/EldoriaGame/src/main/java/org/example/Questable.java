@@ -1,4 +1,5 @@
 package org.example;
 
-public class Questable {
+public interface Questable {
+    void acceptQuest(String questName);
 }
