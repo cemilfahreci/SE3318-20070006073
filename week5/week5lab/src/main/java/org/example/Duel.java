@@ -4,6 +4,10 @@ import java.util.Random;
 
 public class Duel {
     public static void start(HogwartsStudent student1, HogwartsStudent student2, String spell) {
+        if (student1 == null || student2 == null || spell == null) {
+            throw new IllegalArgumentException("Students and spell must not be null");
+        }
+
         boolean firstKnows = student1.knowsSpell(spell);
         boolean secondKnows = student2.knowsSpell(spell);
 
